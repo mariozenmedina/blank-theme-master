@@ -26,10 +26,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!-- FIM DOS METAS -->
 <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/img/icon.png" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/bootstrap.min.css" type="text/css" media="all">
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/bootstrap-theme.min.css" type="text/css" media="all">
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/font-awesome.min.css" type="text/css" media="all">
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css" type="text/css" media="all">
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/less.css" type="text/css" media="all">
 <script src="<?php bloginfo('template_url'); ?>/js/jquery.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/jquery.touchSwipe.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/jquery-ui.js"></script>
