@@ -1,27 +1,32 @@
-/********************************* CONFIG *********************************/
-/*Cores*/
-@az1: #38a1d1;
-@az2: #3092c0;
-@az3: #2884af;
-@az4: #20749d;
-@az5: #18658c;
-@az6: #10577c;
-
-@marinho: #10577C;
-@verde: #169b5d;
-@laranja: #fe4f20;
-@amarelo: #f6ba26;
-@roxo: #786db3;
-@rosa: #ec2079;
-@azul: #079edc;
-@vermelho: #db3838;
-
+/********************************* CORES *********************************/
+@preto: #000;
 @escuro: #222;
+@grafite: #333;
 @cinzaescuro: #777;
 @cinza: #AAA;
 @cinzaclaro: #EEE;
-@gelo: #F2F2F2;
+@gelo: #F7F7F7;
 @branco: #FFF;
+
+@cores:
+	preto @preto,
+	escuro @escuro,
+	grafite @grafite,
+	cinzaescuro @cinzaescuro,
+	cinza @cinza,
+	cinzaclaro @cinzaclaro,
+	gelo @gelo,
+	branco @branco;
+
+.color-classes(@i: length(@cores)) when (@i > 0) {
+    .color-classes(@i - 1);
+    @color: extract(@cores, @i);
+	@nome: extract(@color, 1);
+	@cor: extract(@color, 2);
+    .c@{nome} { color: @cor; }
+	.b@{nome} { background-color: @cor; }
+}
+.color-classes();
 
 /********************************* GERAL *********************************/
 html,body{font-size: 9px;}
