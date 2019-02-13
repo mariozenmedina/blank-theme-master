@@ -19,8 +19,8 @@ register_nav_menu( 'ms', 'Mídias Sociais' );
 
 //THUMBNAILS
 add_theme_support('post-thumbnails');
-add_image_size('capa', 1200, 500, true);
-add_image_size('capa-mobile', 800, 1000, true);
+add_image_size('capa', 1600, 700, true);
+add_image_size('capa-mobile', 900, 1200, true);
 
 //REGISTRANDO POST TYPE
 //include_once(get_stylesheet_directory() . '/functions/custom-post-type.php');

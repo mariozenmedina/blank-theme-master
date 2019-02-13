@@ -1,6 +1,4 @@
 /********************************* CORES *********************************/
-@azul: #0F62AC;
-
 @preto: #000;
 @escuro: #222;
 @grafite: #333;
@@ -11,7 +9,6 @@
 @branco: #FFF;
 
 @cores:
-	azul @azul,
 	preto @preto,
 	escuro @escuro,
 	grafite @grafite,
@@ -34,7 +31,7 @@
 /********************************* GERAL *********************************/
 html,body{font-size: 9px;}
 *{
-	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	font-family: Open Sans, Arial, Helvetica, sans-serif;
 	-webkit-transition: all 200ms ease-in-out;
 	-moz-transition: all 200ms ease-in-out;
 	-o-transition: all 200ms ease-in-out;
@@ -44,7 +41,7 @@ html,body{font-size: 9px;}
 	box-sizing: border-box;
 }
 .alterfont{
-	font-family: Open Sans, Arial, Helvetica, sans-serif;
+	font-family: Font, Open Sans, Arial, Helvetica, sans-serif;
 }
 .no-transition{
 	-webkit-transition: none !important;
@@ -62,7 +59,7 @@ html,body{font-size: 9px;}
 	clear: both;
 }
 a, button{ text-decoration: none; color: inherit; border: 0; outline: 0; background: none; cursor: pointer; &:hover{ text-decoration: none; } }
-ul,ol{ list-style-type: none; .p0; .m0; }
+ul,ol{ list-style-type: none; }
 .tabled{
 	display: table;
 	&>div{display: table-cell; vertical-align: middle;}
@@ -135,86 +132,4 @@ ul,ol{ list-style-type: none; .p0; .m0; }
 .lh180{line-height: 180%;}
 .lh200{line-height: 200%;}
 
-/*********************************** TOPO ***********************************/
-html,body{background-color: #f3f3f3;}
-@media all{
-	#topo{
-		.bbranco; border-top: solid 40px @azul; padding-bottom: 10px;
-		.logo{
-			margin-top: -30px;
-		}
-		a#hamburger{ .bl; .t48; .cpreto; padding-top: 25px; &:hover{ .cazul; } }
-		#container-menu{
-			display: none; .no-transition;
-			padding-top: 20px; overflow: hidden;
-			ul:not(#menu-midias-sociais){
-				width: 100%;
-				&>li{
-					&>a{ .bl; .t18; .uc; .w900; .cazul; padding: 8px; border-left: solid 5px @branco; }
-					&:hover>a{ border-left: solid 10px @azul; padding-left: 15px; }
-					&>ul{
-						padding: 10px 0px 10px 25px; .bazul; margin-bottom: 5px;
-						&>li{
-							&>a{ .t16; border-left: solid 5px @azul; .cbranco; }
-							&:hover>a{ border-left: solid 10px @branco; padding-left: 15px; }
-						}
-					}
-				}
-			}
-			ul#menu-midias-sociais{
-				li{
-					.ib;
-					a{
-						.t42; padding: 8px;
-						&:hover{
-							.cazul;
-						}
-					}
-				}
-			}
-		}
-	}
-}
-@media (min-width:992px){
-	#topo{
-		padding-bottom: 0;
-		#container-menu{
-			display: block !important; overflow: visible; position: relative;
-			ul:not(#menu-midias-sociais){
-				.tr; padding-top: 40px;
-				&>li{
-					.ib; position: relative;
-					&>a{ padding: 10px 20px; border-left: none; }
-					&.menu-item-has-children>a{border-left: solid 5px @branco;} /*Tem submenu*/
-					&:last-child>a{padding-right: 8px;} /*Correção de alinhamento do último item*/
-					&:hover>a{ border-left: none; padding-left: 20px; .cescuro; }
-					&.menu-item-has-children:hover>a{border-left: solid 5px @escuro;} /*Hover tem submenu*/
-					&>ul{ display: none; }
-					&:hover>ul{
-						.ib; position: absolute; left: 0px; top: 100%; background-color: rgba(0,0,0,0.8); padding: 10px; .tl; min-width: 250px; z-index: 90;
-						&>li{
-							.bl; margin-bottom: 2px;
-							&>a{ .t16; border-left: solid 5px @cinza; .ccinza; }
-							&:hover>a{ border-left: solid 10px @branco; .cbranco; }
-						}
-					}
-				}
-			}
-			ul#menu-midias-sociais{
-				position: absolute; top: 5px; right: 0;
-				li{
-					a{
-						.t36;
-					}
-				}
-			}
-		}
-	}
-}
-
-
-
-
-
-
-
+/*********************************** ELEMENTOS ***********************************/
