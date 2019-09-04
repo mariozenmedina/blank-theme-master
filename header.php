@@ -17,7 +17,7 @@
 <meta name="author" content="Alpaca Web">
 <meta property="fb:admins" content="mario.mazen"/>
 <meta property="og:site_name" content="<?php bloginfo('name'); ?>"/>
-<meta property="og:type" content="blog"/>
+<meta property="og:type" content="website"/>
 <meta property="og:title" content="<?php if(is_home()){bloginfo('name');}else{the_title();} ?>"/>
 <meta property="og:description" content="<?php if(is_home() || is_page()){bloginfo('description');}else{the_excerpt();} ?>"/>
 <meta property="og:url" content="<?php if(is_home()){bloginfo('url');}else{the_permalink(); }?>"/>
@@ -36,14 +36,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/scripts.js"></script>
 <!-- FACEBOOK -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3&appId=338319259613222";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 <!-- FACEBOOK -->
 <!-- GOOGLE - COLOCAR ANALYTICS -->
 <!-- GOOGLE -->
