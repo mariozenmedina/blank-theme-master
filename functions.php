@@ -13,6 +13,14 @@ function my_acf_capability( $string ) {
 }
 add_filter('acf/settings/capability', 'my_acf_capability');
 
+//BLOGINFO
+function tu(){
+	bloginfo('template_url');
+}
+function url(){
+	bloginfo('url');
+}
+
 //MENUS
 register_nav_menu( 'principal', 'Menu Principal' );
 register_nav_menu( 'ms', 'Mídias Sociais' );
